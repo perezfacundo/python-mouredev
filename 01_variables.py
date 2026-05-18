@@ -5,8 +5,8 @@
 # - height: un numero flotante que represente tu altura.
 # - Imprime cada variable en una linea separada.
 print("\n# 1. Declarar y asignar valores a las siguientes variables:")
-name = "Perez Facundo"
-age = 27
+name = "Yair Corbalan"
+age = 50
 height = 1.7
 print(f"Nombre: {name}. Edad: {age}. Altura: {height} mts.")
 
@@ -30,7 +30,7 @@ print(f"Mi nombre '{name}' tiene {len(name)} caracteres.")
 # 5. Declarar tres variables en una sola linea que representen tu nombre, apellido y ciudad de origen.
 # - Imprimir estos valores
 print("\n# 5. Declarar tres variables en una sola linea que representen tu nombre, apellido y ciudad de origen.")
-firstname = "Facundo"; lastname = "Perez Quinteros"; origin_city = "Cordoba"
+firstname = "Fabricio"; lastname = "Losada"; origin_city = "Londres"
 print(f"Mi nombre es {lastname}, {firstname}. Soy nacido en {origin_city}.")
 
 # 6. Usar la funcion input para solicitar al usuario su color favorito y almacenarlo en una variable color.

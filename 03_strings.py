@@ -15,8 +15,8 @@ print(resultado)
 
 # 4. F-strings: Usa el formateo de cadenas con f-strings para imprimir tu nombre, apellido y edad en una cadena de texto.
 print("\n# 4. F-strings")
-first_name = "Facundo"
-last_name = "Perez"
+first_name = "Veronica"
+last_name = "Leudante"
 age = 27
 resultado = f"Mi nombre es {last_name} {first_name}. Tengo {age} años de edad."
 print(resultado)
