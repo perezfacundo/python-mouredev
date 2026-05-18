@@ -59,6 +59,5 @@ except:
 
 # 10. Crea una tupla con un solo elemento (el número 100) e imprímela. Asegúrate de usar la sintaxis correcta para crear una tupla con un solo elemento.
 print("\n# 10. Crea una tupla con un solo elemento (el número 100) e imprímela. Asegúrate de usar la sintaxis correcta para crear una tupla con un solo elemento.")
-last_tuple = tuple()
-last_tuple = 100
-print(last_tuple)
+last_tuple = (100,)
+print(last_tuple[2])
