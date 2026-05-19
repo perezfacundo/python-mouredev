@@ -63,7 +63,7 @@ print(common)
 
 # 9. Almacenar las respuestas correctas de un examen de opción múltiple (A, B, C, A) manteniendo el orden de las preguntas. ¿Qué estructura usas?
 print("\n9. Almacenar las respuestas correctas de un examen de opción múltiple (A, B, C, A) manteniendo el orden de las preguntas. ¿Qué estructura usas?")
-
+respuestas = ["A", "B", "C", "D"]
 
 # 10. Guardar los datos de configuración de una aplicación (puerto, host, debug) para consultarlos por su nombre. ¿Qué estructura usas?
 print("\n10. Guardar los datos de configuración de una aplicación (puerto, host, debug) para consultarlos por su nombre. ¿Qué estructura usas?")
