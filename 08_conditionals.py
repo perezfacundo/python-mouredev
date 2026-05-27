@@ -48,12 +48,41 @@ else:
 
 # 7. Escribe un programa que determine si una persona puede votar en función de su edad (mayor o igual a 18). Si tiene 16 o 17 años, indica que puede votar con permiso especial.
 print("\n7. Escribe un programa que determine si una persona puede votar en función de su edad (mayor o igual a 18). Si tiene 16 o 17 años, indica que puede votar con permiso especial.")
+edad = 15
+if edad >= 18:
+    print("La persona tiene edad para votar")
+else:
+    if edad >= 16:
+        print("La persona es menor, pero puede votar con permiso.")
+    else:
+        print("La persona es menor. No puede votar.")
 
 # 8. Crea un programa que solicite una contraseña al usuario y verifique si coincide con una contraseña predefinida. Si no coincide, muestra un mensaje de error.
 print("\n8. Crea un programa que solicite una contraseña al usuario y verifique si coincide con una contraseña predefinida. Si no coincide, muestra un mensaje de error.")
+user = "fpq"
+password = "kjdr42!"
+input_password = "23fewf"
+if password == input_password:
+    print("Contraseña correcta")
+else:
+    print("Contraseña incorrecta")
 
 # 9. Escribe un programa que determine si un número está entre 10 y 20 (ambos incluidos).
 print("\n9. Escribe un programa que determine si un número está entre 10 y 20 (ambos incluidos).")
+number = 10
+if number <= 10 and number >= 20:
+    print("El numero esta entre 10 y 20, incluidos.")
+else:
+    print("El numero no esta entre 10 y 20, incluidos.")
 
 # 10. Escribe un programa que simule un semáforo: solicita al usuario que ingrese un color (rojo, amarillo, verde) y muestra un mensaje indicando si debe detenerse, estar alerta o avanzar.
 print("\n10. Escribe un programa que simule un semáforo: solicita al usuario que ingrese un color (rojo, amarillo, verde) y muestra un mensaje indicando si debe detenerse, estar alerta o avanzar.")
+color = "rojo"
+if color == "rojo":
+    print("Debe detenerse")
+elif color == "amarillo":
+    print("Debe reducir la velocidad")
+elif color == "verde":
+    print("Puede avanzar")
+else:
+    print("El color no corresponde a un semaforo.")
