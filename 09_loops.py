@@ -57,5 +57,8 @@ print(veces)
 nombres = ['Victor', 'Hugo', 'Julio', 'Alberto', 'Gabriel', 'Tomas', 'Matias', 'Pablo', 'Brais', 'Cesar']
 for each in nombres:
     print(each)
-    if each == 'Brais':
+    if each == 'Julio':
         break
+
+for i in person:
+    print(i)
