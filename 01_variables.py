@@ -7,7 +7,7 @@
 print("\n# 1. Declarar y asignar valores a las siguientes variables:")
 name = "Yair Corbalan"
 age = 50
-height = 1.7
+height = 1.7 
 print(f"Nombre: {name}. Edad: {age}. Altura: {height} mts.")
 
 # 2. Convertir la variable edad de entero a cadena y concatenarla con un texto que diga cuantos años tienes.
