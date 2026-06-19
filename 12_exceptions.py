@@ -52,8 +52,8 @@ print(operations(10, 0))
 
 # 5. Crea una función que le pida al usuario su edad y lance un ValueError si la entrada no es un número entero positivo. Usa el manejo de excepciones para gestionar la entrada y lanzar excepciones personalizadas cuando sea necesario.  
 def getAge():
-    number = 0
-    number = int(input("Por favor, ingrese su edad: "))
+    number = -1
+    # number = int(input("Por favor, ingrese su edad: "))
     if number < 1:
         raise ValueError("El valor debe ser igual o mayor a 1")
     return number
@@ -75,14 +75,63 @@ lista = [10, 3, 5, 1, 1, 8, 2, 4]
 print(getElementByIndex(10, lista))
 
 # 7. Crea una función que use try-except para manejar múltiples excepciones: ZeroDivisionError, ValueError y TypeError.  
+def divide(n1, n2):
+    res = False
+    try: res = n1 / n2
+    except ZeroDivisionError as zde: res = "ZeroDivisionError: %s" % zde
+    except ValueError as ve: res = "ValueError: %s" % ve
+    except TypeError as te: res = "TypeError: %s" % te
 
+    print("Resultado: %s" % res)
+divide(13, -12)
 
-# 8. Crea una función que simule una transacción. Lanza una excepción personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.  
+# 8. Crea una función que simule una transacción. Lanza una excepción personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.
+class InsufficientFundsError(Exception):
+    """ Excepcion personalizada para practicar """
+    pass
+
+def retireFunds(qty):
+    res = False
+    actualQty = 500
+
+    if qty > actualQty: raise InsufficientFundsError("No tiene en su cuenta la cantidad que desea retirar.")
+    else:actualQty -= qty
+    return "Usted ha retirado $%s. En su cuenta quedan $%s." % (qty, actualQty)
+
+try:
+    print(retireFunds(501))
+except InsufficientFundsError as ife:
+    print("Error: %s" % ife)
 
 # 9. Crea una función que intente convertir una lista de cadenas en enteros. Maneja cualquier error que surja cuando una cadena no pueda convertirse.  
+cadenas = ["hola", "9", "10", "True", "1:1", "$#$%/#"]
+
+def convertArrayToInt(cadenas):
+    nuevaLista = []
+    for s in cadenas:
+        # num = int(s)
+        # nuevaLista.append(num)
+        try:
+            num = int(s)
+            nuevaLista.append(num)
+        except ValueError as ve:
+            print("ValueError: %s" % ve)
+    return nuevaLista
+
+numeros = convertArrayToInt(cadenas)
+print(numeros)
 
 # 10. Crea una función que calcule la raíz cuadrada de un número. Lanza un ValueError si el número es negativo.
+def calcularRaizCuadrada(num):
+    res = 0; error = ""
+    try:
+        res = int(num ** 0.5)
+    except TypeError as te:
+        error = "No es posible calcular por numero negativo"
 
+    if res < 0:
+        raise ValueError("Valor negativo como resultado")
 
+    return res
 
-
+print(calcularRaizCuadrada(-9))
