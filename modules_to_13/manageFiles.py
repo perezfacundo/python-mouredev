@@ -12,8 +12,7 @@ def readlines(path, enum = True):
 
 def writelines(path, newLine, last = False):
     mode = 'w'
-    if last:
-        mode = 'a'
+    if last: mode = 'a'
 
     with open(path, mode, encoding='utf-8') as file:
         file.write(newLine + "\n")

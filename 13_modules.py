@@ -33,12 +33,16 @@ c2 = Car("Hyundai", "Tiburon", 2003)
 print(c2)
 
 # 7. Escribe un módulo que contenga funciones para leer y escribir en archivos de texto. Crea un programa que use estas funciones para escribir y leer datos.
-from modules_to_13.manageFiles import readlines, writelines
-readlines("archivo.txt", enum = True)
-writelines("archivo.txt", input("Ingresa por favor la linea a escribir en el archivo: "), last=True)
+# from modules_to_13.manageFiles import readlines, writelines
+# readlines("archivo.txt", enum = True)
+# writelines("archivo.txt", input("Ingresa por favor la linea a escribir en el archivo: "), last=True)
 
 # 8. Crea un módulo llamado "statistics" que tenga funciones para calcular la media y la mediana de una lista de números. Usa este módulo para calcular estos valores en una lista dada.
+from modules_to_13.statistics import calculateMedia, calculateMediana
+print("Media: " + str(calculateMedia(12, 7, -3, 14, 7, 22, 0, 9, 15, 3)))
+print("Mediana: " + str(calculateMediana(12, 7, -3, 14, 7, 22, 0, 9, 15, 3)))
 
 # 9. Crea un módulo que contenga una función para contar cuántas veces aparece una palabra en un texto. Escribe un programa que importe el módulo y lo use para contar palabras en una cadena.
+
 
 # 10. Crea un módulo llamado "dates" que contenga funciones para obtener la fecha actual y calcular la diferencia entre dos fechas. Usa este módulo en un programa para mostrar la fecha actual y la diferencia entre dos fechas específicas.
