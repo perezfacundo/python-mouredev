@@ -1,0 +1,1 @@
+La prueba de software es una etapa clave en la creación de software. Una buena prueba asegura que el software funcione bien. Si la prueba falla, el software debe ser revisado. Revisar el software después de una prueba fallida es necesario. Por lo tanto, hacer una prueba exhaustiva del software siempre es una buena idea.

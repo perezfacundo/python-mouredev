@@ -16,3 +16,12 @@ def writelines(path, newLine, last = False):
 
     with open(path, mode, encoding='utf-8') as file:
         file.write(newLine + "\n")
+
+def findWordInFile(path, word):
+    res = 0
+    with open(path, "r") as file:
+        for line in file:
+            if word in line:
+                res += line.lower().count(word)
+    return f"times to {word} in {path}: {res}"
+    

@@ -43,6 +43,12 @@ print("Media: " + str(calculateMedia(12, 7, -3, 14, 7, 22, 0, 9, 15, 3)))
 print("Mediana: " + str(calculateMediana(12, 7, -3, 14, 7, 22, 0, 9, 15, 3)))
 
 # 9. Crea un módulo que contenga una función para contar cuántas veces aparece una palabra en un texto. Escribe un programa que importe el módulo y lo use para contar palabras en una cadena.
-
+from modules_to_13.manageFiles import findWordInFile
+print(findWordInFile("archivo2.txt", "software"))   # 6
+print(findWordInFile("archivo2.txt", "prueba"))     # 5
+print(findWordInFile("archivo2.txt", "una"))        # 5
 
 # 10. Crea un módulo llamado "dates" que contenga funciones para obtener la fecha actual y calcular la diferencia entre dos fechas. Usa este módulo en un programa para mostrar la fecha actual y la diferencia entre dos fechas específicas.
+from modules_to_13.date import today, daysTo
+print(today())
+print(daysTo("30/09/2026"))
