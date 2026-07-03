@@ -49,6 +49,7 @@ print(findWordInFile("archivo2.txt", "prueba"))     # 5
 print(findWordInFile("archivo2.txt", "una"))        # 5
 
 # 10. Crea un módulo llamado "dates" que contenga funciones para obtener la fecha actual y calcular la diferencia entre dos fechas. Usa este módulo en un programa para mostrar la fecha actual y la diferencia entre dos fechas específicas.
-from modules_to_13.date import today, daysTo
+from modules_to_13.date import today, daysTo #, monthsTo
 print(today())
 print(daysTo("30/09/2026"))
+# print(monthsTo()) -> ImportError
